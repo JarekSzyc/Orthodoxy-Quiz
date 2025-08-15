@@ -1,7 +1,7 @@
 import streamlit as st
-from app.quiz_logic import load_questions_from_json, calculate_orthodoxy_score
+from quiz_logic import load_questions_from_json, calculate_orthodoxy_score
 
-questions = load_questions_from_json(filepath='questions.json', need_validation=False)
+questions = load_questions_from_json(filepath='data/questions.json', need_validation=False)
 
 st.title("Catholic Orthodoxy Quiz")
 st.text("Welcome! Check your alignment with Catholic doctrine.")
