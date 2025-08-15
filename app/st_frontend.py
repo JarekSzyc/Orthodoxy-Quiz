@@ -20,4 +20,4 @@ for i, q in enumerate(questions):
 
 if st.button("Submit"):
     score = calculate_orthodoxy_score(questions, user_answers)
-    st.success(f"Your orthodoxy score: {score*100:.0f}%")
+    st.success(f"Your orthodoxy score: {score*100:.0f}% \nSee detailed explanation at: https://jarekszyc.github.io/Orthodoxy-Quiz/")
